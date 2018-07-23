@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- If you delete this tag, the sky will fall on your head -->
+<meta name="viewport" content="width=device-width" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Weekly Newsletter</title>
+	
+<link rel="stylesheet" type="text/css" href="stylesheets/weekly-newsletter.css" />
+
+</head>
+ 
+<body bgcolor="#FFFFFF">
+
+<!-- HEADER -->
+<table class="head-wrap">
+	<tr>
+		<td></td>
+		<td class="header-container">
+			
+				<div class="header-content">
+					<table width="100%">
+					<tr>   
+						<td><img src="https://raw.githubusercontent.com/RocketChat/rocketchat.github.io/master/images/press/logos/120x22.png" alt="Rocket.chat-logo" width="150px"/></td>
+					</tr>
+				</table>
+				</div>
+				
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /HEADER -->
+
+
+<!-- BODY -->
+<table class="body-wrap">
+	<tr>
+		<td></td>
+		<td class="container" bgcolor="#FFFFFF">
+			<div class="content">
+			<table>
+				<tr>
+					<td>                      
+                        
+                        <h5 style="color:#1D74F5; font-weight: 900;"> July 07 ~ July 13 2018</h5>
+                        
+                        <h2>Weekly Newsletter 📈</h2>
+						<p class="lead" style="padding-bottom: 16px">by Marcelo Schmidt</p>
+                        
+					</td>
+				</tr>
+			</table>
+                
+            <table style="background-color: #F7F8FA; border-radius: 2px;">
+				<tr>
+					<td style="padding: 36px 24px">                      
+                        <h3>Hightlights</h3>
+                        
+                        <ul>
+                            <li>GSOC 2018 - 2nd term completed, 8 students out of 8 passed the term, on track to produce 8+ useful features for Rocket.Chat project by end of 3rd term mid August</li>
+                            
+                            <li>Released version <a href="https://github.com/RocketChat/Rocket.Chat/releases/tag/0.66.3" target="_blank" style="font-size: 16px; color: #1D74F5;">0.66.3</a></li>
+                            
+                            <li>Released version <a href="https://github.com/RocketChat/Rocket.Chat/releases/tag/0.67.0-rc.0" target="_blank" style="font-size: 16px; color: #1D74F5;">0.67.0-rc.0</a> with the cache removal (<a href="https://forums.rocket.chat/t/rocket-chat-0-67-0-extraordinary-release/1560" target="_blank" style="font-size: 16px; color: #1D74F5;">forum post about it</a>)</li>
+                            
+                            <li>Releasing release candidate of iOS 3.0.0 today on TestFlight, please help us testing it!</li>
+                            
+                            <li>Releasing release candidate of Android 2.5.0 today on Beta, please help us testing it!</li>
+                            
+                            <li style="padding-bottom: 0px">RC’s collaborative project with SHM Foundation, which uses RC as a support group for HIV positive women in Zambia, launches on Monday</li>
+                        </ul>
+                        
+					</td>
+                    <tr>      
+				</tr>
+			</table>
+             
+                 <hr>
+                
+                <table>
+				<tr>
+					<td>                   
+                        
+                         <!-- BACKEND -->
+                       
+                        <h3>Backend</h3>
+						
+                        <p style="font-weight: bold">Progress</p>
+                        
+                         <ul>
+                             <li>Released version <a href="https://github.com/RocketChat/Rocket.Chat/releases/tag/0.66.3" target="_blank" style="font-size: 16px; color: #1D74F5;">0.66.3</a></li>
+                             
+                              <li>Released version <a href="https://github.com/RocketChat/Rocket.Chat/releases/tag/0.67.0-rc.0" target="_blank" style="font-size: 16px; color: #1D74F5;">0.67.0-rc.0</a> with the cache removal (<a href="https://forums.rocket.chat/t/rocket-chat-0-67-0-extraordinary-release/1560" target="_blank" style="font-size: 16px; color: #1D74F5;">forum post about it</a>)</li>
+                             
+                             <li>Highlights and some descriptions for 0.66.0 blog post</li>
+                             
+                             <li>Added section [IMPROVE] to Houston (history.md)</li>
+                             
+                             <li>Merged two important livechat features for Caixa POC (livechat file uploads and new livechat iframe apis)</li>
+                             
+                             
+                             <p class="title";>Plans</p>
+                             
+                             
+                             <li>Work on IBM requirements</li>
+                             
+                             <li>Solve AD configuration for RTM</li>
+                             
+                             <hr>                             
+                             
+                              <!-- CLOUD -->
+                             
+                              <h3>Cloud</h3>
+						
+                              <p style="font-weight: bold">Progress</p>
+                             
+                           
+                             <li>Reworked our loadbalancers.  They are now on dedicated nodes and real ip should now be preserved allowing us to turn on sticky sessions</li>
+                                    
+                             <li>New trials now have passwords set + autologin. So no more ugly password set box right after they connect to their server.  Should solve some frustrations in the flow</li>
+                                    
+                             <li>Switched open.rocket.chat over to using a mongo 4.0 wiredtiger node.  With the no-cache branch it has been running solid since switched 3 days ago</li>
+                             
+                             
+                            <p class="title";>Plans</p>
+                             
+                             
+                             <li>Standing up IBM PoC on their openshift cluster</li>
+                             
+                             <li>Moving forward with wiredtiger and hopefully atlas as soon as the deal is closed</li>
+                            
+                             <li>Creating some additional functionality in cloud console (fleetcommand) api for new functionality in the new cloud UI</li>
+                             
+                              <p class="title";>Problems</p>
+                             
+                             <li>IBM PoC wants a redis piece we don’t have finished yet</li>
+                             
+                             <li>Small traffic interruption for custom domains on cloud - <a href="https://forums.rocket.chat/t/cloud-workspace-custom-domains-2018-07-11/1568" target="_blank" style="font-size: 16px; color: #1D74F5;">post mortem</a></li>
+                             
+                             <hr>
+                             
+                              <!-- FRONT-END -->
+                             
+                              <h3>Front-end</h3>
+						
+                              <p class="title";>Progress</p>
+                             
+                             <li>Beta cloud (<a href="https://cloud-beta.rocket.chat" target="_blank" style="font-size: 16px; color: #1D74F5;">see more</a>)</li>
+                             
+                             <li>Almost finishing external marketplace</li>
+                             
+                             
+                             <p class="title";>Plans</p>
+                             
+                             <li>Start the new trial (cloud)</li>
+                             
+                             
+                              <hr>                                 
+                             
+                              <!-- DESIGN -->
+                             
+                              <h3>Design</h3>
+						
+                              <p style="font-weight: bold">Progress</p>
+                             
+                             <li>New iOS app icons</li>
+                             
+                             <li>Finalized the first set of message components to iOS Native App</li>
+                             
+                             <li>Finalized the Android onboarding</li>
+                             
+                             <li>New brand grid to the avatar in the social media</li>
+                             
+                             <li>Added some apps components to support the dark and black them</li>
+                             
+                             <li>Start designing mobile apps with auto layout </li>
+                             
+                             
+                            <p class="title";>Plans</p>
+                             
+                             <li>Working on the frontend of our new e-mail templates</li>
+                             
+                             <li>Create a page with our identity guide and assets</li>
+                             
+                             <li>Update the Install page to deliver information more understandable</li>
+                             
+                             <li>Start designing message components for Android</li>
+                             
+                             <li>Start designing a page to the product promo video</li>
+                             
+                             
+                             <hr>   
+                             
+                              <!-- MKT -->
+                             
+                              <h3>Marketing</h3>
+						
+                              <p style="font-weight: bold">Progress</p>
+                             
+                              <li>Partner & Become a Partner pages have been updated, brochure added</li>
+                             
+                              <li>Blog post for Project Insaka launch & accompanying social promo</li>
+                             
+                             <li>Prepped interview with Gabriel for a 1st-person blog post on marketplace and RC’s vision for it ahead of a launch</li>
+                            
+                             <li>Zapier launch blog post, awaiting PR merge</li>
+                             
+                             <li>Prepped source doc for GSoC students and mentors to provide thoughts ahead of blog posts, 1 per project </li>
+                             
+                             <li>QA new support and install illustrations for website</li>
+                             
+                             <li>Began drafting v.66 post</li>
+                             
+                             
+                            <p class="title";>Plans</p>
+                             
+                             
+                             <li>Cloud payment details to be made more specific</li>
+                             
+                             <li>Finalize cloud campaign content</li>
+                             
+                             <li>Create content for all new emails created by design team</li>
+                             
+                             <li>Get started with an announcement post on use of RC by Canadian gov</li>
+                             
+                             <li>Copy edit iOS app description</li>
+                             
+                             <li>Finalize v.66 post</li>
+                             
+                             <li>Prep inaugural Feature Spotlight blog post: IRC Federation</li>
+                             
+                             
+                            <p class="title";>Others</p>
+                             
+                             <li>Loved the presentations in our Weekly yesterday. I particularly enjoyed being shown the improved apps; this has been brought up as something people would enjoy having for every release and I agree!</li>
+                            
+                             
+                             <hr>
+                             
+                              <!-- Android -->
+                             
+                              <h3>Mobile (Android)</h3>
+						
+                              <p style="font-weight: bold">Progress</p>
+                             
+                             <li>Working hard to get the release candidate out today</li>
+                             
+                             
+                            <p class="title";>Plans</p>
+                             
+                             <li>Release final version in the store of 2.5.0</li>
+                             
+                             
+                              <hr>
+                             
+                              <!-- iOS -->
+                             
+                              <h3>Mobile (iOS)</h3>
+						
+                              <p style="font-weight: bold">Progress</p>
+                             
+                             <li>Working hard to get the release candidate out today</li>
+                             
+                            <p class="title";>Plans</p>
+                             
+                             <li>Release final version in the store of 3.0.0</li>
+                             
+                             
+                             <hr>
+                             
+                              <!-- React Native -->
+                             
+                              <h3>Mobile (React Native)</h3>
+						
+                              <p style="font-weight: bold">Progress</p>
+                             
+                             <li>Image upload (edit/crop/resize)</li>
+                             
+                             <li>Upload status</li>
+                             
+                             <li>New push notification lib</li>
+                             
+                            <p class="title";>Plans</p>
+                             
+                             <li>Update do react 0.57</li>
+                             
+                             <hr>
+                             
+                             <!-- Opportunities -->
+                             
+                              <h3>Opportunities: GSoC 2018</h3>
+						
+                              <p style="font-weight: bold">Progress</p>
+                             
+                             <li>8 out of 8 students passed for second term</li>
+                             
+                            <p class="title";>Plans</p>
+                             
+                             <li>3 Rocket.Chat sponsored students under evaluation for 2nd term</li>
+                             
+                             <li>On track for 11+ major features to land in Rocket.Chat product by mid August end of last term</li>
+                             
+                             <p class="title";>Problems</p>
+                             
+                             <li>Two projects needed intervention and  turn-around; one successfully put back on track;  another project remains problematic and needed last hour admin intervention</li>
+                             
+                             <p class="title";>Others</p>
+                             
+                             <li>Thanks to all GSoC mentors for their continued hard work on making this season a total success</li>
+                             
+                             
+                             <hr>
+                             
+                              <!-- Support -->
+                             
+                              <h3>Support</h3>
+						
+                              <p style="font-weight: bold">Progress</p>
+                             
+                             <li>Our audits are complete and we’ll share the findings in our Q2 presentation</li>
+                             
+                             
+                             <p class="title";>Plans</p>
+                             
+                             <li>Further streamlining of our processes is needed. As we do this, we’ll start tracking customer satisfaction with surveys to see where else we can improve. This will be discussed in our presentation as well </li>
+                             
+                            <p class="title";>Problems</p>
+                             
+                             <li>We had a couple folks take to social media to complain about the service received. Both were escalated and helped accordingly, but we’d like to try and avoid this in the future, so it’s being considered as part of our process changes</li>
+                             
+                             
+                             <p class="title";>Others</p>
+                             
+                             
+                             <li>While Cloud and Mobile have been working closely with us on resolutions (you guys rock!!), we’ve had minimal contact with frontend and backend. If anyone from these teams wants to chat about how to handle issues related their projects, please let Tom know. Thanks!</li>                           
+                             
+                        </ul>
+                        
+                          <hr>   
+                    </td>
+				</tr>
+			</table>
+                
+                <table>
+				<tr>
+                    
+                    <p>Have a great week, everyone!<br>Thanks for reading.<p>
+                    
+                    <p>__</p>
+                    
+					<td valign="top" style="width: 72px">                      
+                        
+                       <img src="https://raw.githubusercontent.com/RocketChat/rocketchat.github.io/master/images/press/logos/512x512.png" style="width:64px;height:64px;display:block;margin:none;">
+                        
+					</td>
+                    
+                        <td>
+                            <p style="margin-bottom: 2px; padding-top: 10px"> <b>Marcelo Schmidt</b></p>
+                            
+                            <h5 style="padding-bottom: 4px">COO &amp; Co-Founder</h5>
+                            
+                            <p style="margin-bottom: 1px;"><a href="mailto:marcelo.schmidt@rocket.chat" target="_blank">marcelo.schmidt@rocket.chat</a></p>
+                            
+                            <p style="margin-bottom: 1px;"><a href="https://open.rocket.chat/direct/marcelo.schmidt" target="_blank">@marcelo.schmidt</a></p>
+                            
+                            <p style="margin-bottom: 1px;"><a href="https://rocket.chat" target="_blank">rocket.chat</a></p>
+                            
+                        </td>
+                    
+				</tr>
+			</table>
+                
+			</div>								
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /BODY -->
+
+<!-- FOOTER -->
+<table class="footer-wrap">
+	<tr>
+		<td></td>
+		<td class="container">
+			
+				<!-- content -->
+				<div class="footer-content">
+				<table width="100%">
+				<tr>
+					<td align="center">
+						<p>
+							<a href=https://rocket.chat/blog target="_blank">Blog</a> |
+							<a href=https://github.com/RocketChat/ target="_blank">Github</a> |
+                            <a href=https://www.linkedin.com/company/rocket-chat target="_blank">Linkedin</a> |
+                            <a href=https://www.facebook.com/RocketChatApp/ target="_blank">Facebook</a> |
+                            <a href=https://www.instagram.com/rocket.chat target="_blank">Instagram</a>
+						</p>
+                        <h6>© Rocket.Chat Technologies Corp.<br> Made with ❤️ in 🇧🇷 🇨🇦 🇩🇪 🇮🇳 🇬🇧 🇺🇸 </h6>
+					</td>
+				</tr>
+			</table>
+				</div><!-- /content -->
+				
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /FOOTER -->
+
+</body>
+</html>
